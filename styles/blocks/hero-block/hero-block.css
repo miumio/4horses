@@ -1,0 +1,110 @@
+/* Hero-block */
+
+.hero-block {
+	overflow: hidden;
+}
+
+.hero-block__wrapper {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 220px;
+	z-index: 1;
+	margin-top: 40px;
+}
+
+.hero-block__info {
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+.hero-block__tagline {
+	margin: 0;
+
+	font-family: "Merriweather", system-ui, serif;
+	font-size: 60px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.hero-block__tagline--center {
+	text-align: center;
+}
+
+.hero-block__tagline--right {
+	text-align: right;
+}
+
+.hero-block__text {
+	margin: 36px 0;
+}
+
+.hero-block__back {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+}
+
+.hero-block__back img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-block__city {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+
+	overflow: hidden;
+}
+
+.hero-block__city img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-block__circle {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	/* max-width: 30vw; */
+
+	-webkit-animation: spin 40s linear infinite;
+	-moz-animation: spin 40s linear infinite;
+	animation: spin 40s linear infinite;
+}
+/* todo animate css module  */
+@-moz-keyframes spin {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.hero-block__circle img {
+	max-width: 100%;
+	height: auto;
+}
+
+.hero-block__figure-1 {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+}
