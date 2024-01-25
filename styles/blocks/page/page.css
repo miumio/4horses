@@ -1,0 +1,12 @@
+/* Page */
+
+.page {
+	color: var(--color-text-primary);
+	font-family: "Golos Text", system-ui, sans-serif;
+}
+
+/* Body */
+
+.page__body {
+	margin: 0;
+}

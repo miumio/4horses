@@ -1,0 +1,19 @@
+/* Page-logo */
+
+.page-logo {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--color-text-middle);
+}
+
+.page-logo__title {
+	margin: 0;
+	font-size: 16px;
+	max-width: 150px;
+}
+
+.page-logo__icon {
+	margin-right: 8px;
+}

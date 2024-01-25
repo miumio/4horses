@@ -1,0 +1,4 @@
+:root {
+	--color-text-primary: var(--color-dark);
+	--color-text-middle: var(--color-middle);
+}
