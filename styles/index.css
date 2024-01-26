@@ -21,4 +21,6 @@
 @import url('blocks/page-nav/index.css');
 @import url('blocks/button/index.css');
 @import url('blocks/running-line/index.css');
+@import url('blocks/about/index.css');
+@import url('blocks/lecture-cover/index.css');
 @import url('blocks/page-footer/index.css');

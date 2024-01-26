@@ -1,0 +1,38 @@
+/* Lecture-cover */
+
+.lecture-cover {
+	position: relative;
+	flex-shrink: 0;
+	margin-right: 32px;
+	width: 474px;
+	height: 527px;
+}
+
+.lecture-cover__bg {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	z-index: -1;
+
+}
+
+.lecture-cover__money {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+.lecture-cover__figure {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+.lecture-cover__hand {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
