@@ -3,4 +3,5 @@
 .page-header {
 	position: relative;
 	padding: 50px 0 100px;
+	overflow: hidden;
 }
