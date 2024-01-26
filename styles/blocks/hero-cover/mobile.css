@@ -1,5 +1,30 @@
 /* Mobile */
 
-@media (width < 1023px) {
+@media (width < 767px) {
+	.hero-cover__figure-1 {
+		bottom: 134px;
+		left: 10%;
+	}
 
+	.hero-cover__figure-2 {
+		bottom: 204px;
+		left: 60%;
+	}
+
+	.hero-cover__figure-3 {
+		transform: translate(0, 0);
+	}
+
+	.hero-cover__figure-4 {
+		display: none;
+	}
+
+	.hero-cover__city {
+		transform: translateX(-75%);
+	}
+
+	.hero-cover__circle {
+		bottom: 34px;
+		left: 20%;
+	}
 }

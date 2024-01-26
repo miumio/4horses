@@ -1,5 +1,7 @@
 /* Mobile */
 
 @media (width < 1023px) {
-
+	.page-footer {
+		padding: 0 0 60px;
+	}
 }

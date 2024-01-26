@@ -1,11 +1,13 @@
 /* Page-logo */
 
 .page-logo {
+	position: relative;
 	display: flex;
 	align-items: center;
 	font-weight: 700;
 	font-size: 16px;
 	color: var(--color-text-middle);
+	z-index: 1;
 }
 
 .page-logo__title {

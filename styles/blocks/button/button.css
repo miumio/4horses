@@ -15,6 +15,7 @@
 
 .button__text {
 	width: min-content;
+	text-align: center;
 }
 
 .button--dark {

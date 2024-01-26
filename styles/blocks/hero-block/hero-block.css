@@ -1,6 +1,7 @@
 /* Hero-block */
 
 .hero-block {
+	padding: 50px 0 100px;
 }
 
 .hero-block__back {
@@ -32,7 +33,10 @@
 
 .hero-block__tagline {
 	margin: 0;
+}
 
+.hero-block__title {
+	display: block;
 	font-family: var(--font-family-heading);
 	font-size: 60px;
 	line-height: 1.1;
@@ -40,11 +44,11 @@
 	text-align: left;
 }
 
-.hero-block__tagline--center {
+.hero-block__title--center {
 	text-align: center;
 }
 
-.hero-block__tagline--right {
+.hero-block__title--right {
 	text-align: right;
 }
 

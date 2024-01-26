@@ -1,5 +1,7 @@
 /* Mobile */
 
 @media (width < 1023px) {
-
+	.container {
+		padding-inline: 20px;
+	}
 }

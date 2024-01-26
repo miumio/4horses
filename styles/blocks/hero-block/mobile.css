@@ -1,5 +1,21 @@
 /* Mobile */
 
 @media (width < 1023px) {
+	.hero-block__title {
+		font-size: 36px;
+	}
+}
 
+@media (width < 767px) {
+	.hero-block {
+		padding-bottom: 271px;
+	}
+
+	.hero-block__wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.hero-block__info {
+		text-align: left;
+	}
 }

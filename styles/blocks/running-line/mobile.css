@@ -1,5 +1,8 @@
 /* Mobile */
 
 @media (width < 1023px) {
-
+	.running-line {
+		padding-block: 10px;
+		font-size: 16px;
+	}
 }

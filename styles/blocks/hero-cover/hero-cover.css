@@ -3,13 +3,13 @@
 .hero-cover__city {
 	position: absolute;
 	bottom: 0;
-	right: 0;
-	left: 0;
+	left: 50%;
 
 	display: flex;
 	justify-content: center;
 
 	overflow: hidden;
+	transform: translateX(-50%);
 
 	img {
 		height: 100%;
@@ -19,7 +19,7 @@
 
 .hero-cover__circle {
 	position: absolute;
-	top: 0;
+	bottom: 200px;
 	left: 50%;
 	transform-origin: center;
 	display: flex;
@@ -33,13 +33,13 @@
 
 .hero-cover__figure-1 {
 	position: absolute;
-	top: 30%;
-	left: 50%;
+	bottom: 206px;
+	left: 54%;
 }
 
 .hero-cover__figure-2 {
 	position: absolute;
-	top: 10%;
+	bottom: 300px;
 	left: 80%;
 }
 
