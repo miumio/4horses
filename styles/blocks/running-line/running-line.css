@@ -1,0 +1,41 @@
+/* Base */
+
+.running-line {
+	padding-block: 12px;
+	overflow: hidden;
+	display: flex;
+
+	font-family: var(--font-family-heading);
+	font-size: 22px;
+	color: var(--color-white);
+	text-transform: uppercase;
+	background-color: var(--color-warning);
+}
+
+.running-line__list {
+	display: flex;
+	justify-content: space-around;
+	width: min-content;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.running-line__item {
+	position: relative;
+	display: flex;
+	padding-inline: 12px;
+	white-space: nowrap;
+}
+
+.running-line__item::after {
+	content: '';
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: currentColor;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(50%, -50%);
+}

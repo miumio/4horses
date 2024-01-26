@@ -1,6 +1,7 @@
 /* Global */
 
 @import url('global/fonts.css');
+@import url('global/animation.css');
 @import url('global/keyframes.css');
 @import url('global/variables.css');
 @import url('global/reset.css');
@@ -19,3 +20,4 @@
 @import url('blocks/hero-cover/index.css');
 @import url('blocks/page-nav/index.css');
 @import url('blocks/button/index.css');
+@import url('blocks/running-line/index.css');

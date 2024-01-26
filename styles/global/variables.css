@@ -1,6 +1,12 @@
 /* Variables */
 
 :root {
+	/* colors */
 	--color-text-primary: var(--color-dark);
 	--color-text-middle: var(--color-middle);
+	--color-warning: var(--color-red);
+
+	/* font */
+	--font-family-heading: "Merriweather", system-ui, serif;
+	--font-family-text: "Golos Text", system-ui, sans-serif;
 }

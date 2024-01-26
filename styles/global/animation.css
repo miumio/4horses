@@ -5,3 +5,9 @@
 	-moz-animation: spin 40s linear infinite;
 	animation: spin 40s linear infinite;
 }
+
+.animation-scroll {
+	-webkit-animation: scroll 5s infinite linear;
+	-moz-animation: scroll 5s infinite linear;
+	animation: scroll 5s infinite linear;
+}
