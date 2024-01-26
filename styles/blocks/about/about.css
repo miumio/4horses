@@ -9,8 +9,6 @@
 }
 
 .about__title {
-	display: block;
-
 	font-family: var(--font-family-heading);
 	font-size: 36px;
 	line-height: 1.35;

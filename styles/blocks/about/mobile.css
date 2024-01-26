@@ -1,5 +1,16 @@
 /* Mobile */
 
 @media (width < 1023px) {
+	.about__row {
+		flex-direction: column;
+	}
 
+	.about__cover {
+		/* Todo fix oval */
+		order: -1;
+		margin-bottom: 32px;
+		padding-top: 50%;
+		width: 100%;
+		max-width: 500px;
+	}
 }

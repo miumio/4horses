@@ -1,5 +1,15 @@
 /* Mobile */
 
-@media (width < 1023px) {
+@media (width < 767px) {
+	.details-list {
+		grid-template-columns: 1fr;
+	}
 
+	.details-list dt {
+		border-bottom: 0;
+	}
+
+	.details-list dd {
+		border-left: 0;
+	}
 }
