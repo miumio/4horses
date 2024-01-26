@@ -1,0 +1,16 @@
+/* Text-stroked */
+
+.text-stroked {
+	position: relative;
+}
+
+.text-stroked::after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	content: "";
+	height: 2px;
+	border-radius: 2px;
+	background-color: var(--color-warning);
+}

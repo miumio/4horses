@@ -1,0 +1,31 @@
+/* Details-list */
+
+.details-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 0;
+}
+
+.details-list dt {
+	opacity: 0.7;
+}
+
+.details-list dd {
+	font-weight: 600;
+}
+
+.details-list dd,
+.details-list dt {
+	padding: 16px;
+	border-bottom: 2px solid var(--color-grey);
+}
+
+.details-list dd:last-of-type,
+.details-list dt:last-of-type {
+	border-bottom: 0;
+}
+
+.details-list dd {
+	margin: 0;
+	border-left: 2px solid var(--color-grey);
+}

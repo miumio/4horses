@@ -26,6 +26,10 @@
 	align-items: center;
 }
 
+.about__row:not(:first-child) {
+	margin-top: 32px;
+}
+
 .about__cover {
 	position: relative;
 	padding-top: 20%;
@@ -48,4 +52,8 @@
 
 .about__note {
 	color: var(--color-blue);
+}
+
+.about__details {
+	margin: 50px 0;
 }
