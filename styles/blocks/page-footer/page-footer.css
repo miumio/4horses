@@ -1,0 +1,13 @@
+/* Page-footer */
+
+.page-footer {
+	padding: 0 0 72px;
+	margin-top: auto;
+	background-color: var(--color-back);
+}
+
+.page-footer__text {
+	margin-top: 40px;
+	opacity: 0.6;
+	line-height: 1.2;
+}

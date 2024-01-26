@@ -5,6 +5,7 @@
 	--color-text-primary: var(--color-dark);
 	--color-text-middle: var(--color-middle);
 	--color-warning: var(--color-red);
+	--color-back: var(--color-sepia);
 
 	/* font */
 	--font-family-heading: "Merriweather", system-ui, serif;
