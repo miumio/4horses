@@ -1,8 +1,8 @@
 /* Base */
 
 .running-line {
+	position: relative;
 	padding-block: 12px;
-	overflow: hidden;
 	display: flex;
 
 	font-family: var(--font-family-heading);
@@ -10,20 +10,22 @@
 	color: var(--color-white);
 	text-transform: uppercase;
 	background-color: var(--color-warning);
+	overflow: hidden;
 }
 
 .running-line__list {
 	display: flex;
-	justify-content: space-around;
-	width: min-content;
+	flex-direction: row;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	transform: translateX(50%);
 }
 
 .running-line__item {
 	position: relative;
 	display: flex;
+	flex: auto;
 	padding-inline: 12px;
 	white-space: nowrap;
 }
