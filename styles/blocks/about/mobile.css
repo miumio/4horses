@@ -6,11 +6,10 @@
 	}
 
 	.about__cover {
-		/* Todo fix oval */
 		order: -1;
 		margin-bottom: 32px;
-		padding-top: 50%;
-		width: 100%;
-		max-width: 500px;
+		padding-top: 212px;
+		width: 335px;
+		border-radius: 212px/106px;
 	}
 }

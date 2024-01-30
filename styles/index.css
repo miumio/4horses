@@ -25,4 +25,7 @@
 @import url('blocks/text-stroked/index.css');
 @import url('blocks/about/index.css');
 @import url('blocks/lecture-cover/index.css');
+@import url('blocks/swiper/index.css');
+@import url('blocks/slider-block/index.css');
+@import url('blocks/slider-steps/index.css');
 @import url('blocks/page-footer/index.css');

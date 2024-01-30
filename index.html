@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Клуб четырех коней</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="styles/index.css">
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -152,9 +153,6 @@
 				</div>
 			</div>
 		</section>
-	</header>
-
-	<main>
 		<div class="running-line">
 			<ul class="running-line__list" data-marquee>
 				<li class="running-line__item">Дело помощи утопающим&nbsp;&mdash; дело рук самих
@@ -165,7 +163,9 @@
 				<li class="running-line__item">Лед тронулся, господа присяжные заседатели!</li>
 			</ul>
 		</div>
+	</header>
 
+	<main class="page__main">
 		<!-- about -->
 		<section class="about">
 			<div class="container">
@@ -270,6 +270,87 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Steps slider -->
+		<section class="slider-block">
+			<div class="container">
+				<div class="slider-block__heading">
+					<h2>
+						<span class="slider-block__title">Этапы преображения</span>
+						<span class="slider-block__heading-row">
+							<span class="slider-block__title">Васюков</span>
+							<span class="slider-block__description">Будущие&nbsp;источники
+								обогащения&nbsp;васюкинцев</span>
+						</span>
+					</h2>
+				</div>
+				<div class="slider-steps" id="slider">
+					<div class="slider_steps__back" aria-hidden="true">
+						<picture>
+							<source type="image/webp"
+								srcset="assets/images/back/noise_back.webp 1x, assets/images/back/noise_back@2x.webp 2x">
+							<img src="assets/images/back/noise_back.png"
+								srcset="assets/images/back/noise_back@2x.png 2x" width="528" height="609" alt="фон">
+						</picture>
+					</div>
+					<ul class="slider-steps__inner">
+						<li class="slider-steps__slide slider-steps__slide--wide swiper-slide">
+							<p class="slider-steps__text">
+								<span class="slider-steps__count">1</span>
+								Строительство железнодорожной магистрали Москва-Васюки
+							</p>
+							<p class="slider-steps__text">
+								<span class="slider-steps__count">2</span>
+								Открытие фешенебельной гостиницы &laquo;Проходная пешка&raquo;
+								и&nbsp;других небоскрёбов
+							</p>
+						</li>
+						<li class="slider-steps__slide slider-steps__slide--long swiper-slide">
+							<p class="slider-steps__text">
+								<span class="slider-steps__count">3</span>
+								Поднятие сельского хозяйства в&nbsp;радиусе на&nbsp;тысячу
+								километров: производство овощей, фруктов, икры, шоколадных конфет
+							</p>
+						</li>
+						<li class="slider-steps__slide slider-steps__slide--wide swiper-slide">
+							<p class="slider-steps__text">
+								<span class="slider-steps__count">4</span>
+								Строительство дворца для турнира
+							</p>
+							<p class="slider-steps__text">
+								<span class="slider-steps__count">5</span>
+								Размещение гаражей для гостевого автотранспорта
+							</p>
+						</li>
+						<li class="slider-steps__slide swiper-slide">
+							<p class="slider-steps__text">
+								<span class="slider-steps__count">6</span>
+								Постройка сверхмощной радиостанции для передачи всему миру
+								сенсационных результатов
+							</p>
+						</li>
+						<li class="slider-steps__slide slider-steps__slide--wide swiper-slide">
+							<p class="slider-steps__text">
+								<span class="slider-steps__count">7</span>
+								Создание аэропорта &laquo;Большие Васюки&raquo;
+								с&nbsp;регулярным отправлением почтовых самолётов и&nbsp;дирижаблей во&nbsp;все концы
+								света, включая Лос-Анжелос и&nbsp;Мельбурн
+							</p>
+						</li>
+					</ul>
+					<div class="slider-steps__airplane">
+						<picture>
+							<source type="image/webp"
+								srcset="assets/images/steps/steps_airplane.webp 1x, assets/images/steps/steps_airplane@2x.webp 2x">
+							<img src="assets/images/steps/steps_airplane.png"
+								srcset="assets/images/steps/steps_airplane@2x.png 2x" width="401" height="235"
+								alt="самолет">
+						</picture>
+					</div>
+				</div>
+			</div>
+
+		</section>
 	</main>
 
 	<!-- footer -->
@@ -293,6 +374,8 @@
 			</p>
 		</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/init-steps-sliders.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 	<script>
 		let currentScroll = 0;
@@ -301,11 +384,13 @@
 		let tween = gsap.to('[data-marquee]', {
 			xPercent: -100,
 			repeat: -1,
-			duration: 30,
+			duration: 50,
 			ease: 'linear'
 		}).totalProgress(0.5);
 
-		window.addEventListener('scroll', function() {
+		gsap.set('[data-marquee]', { xPercent: -50 })
+
+		window.addEventListener('scroll', function () {
 			if (window.pageYOffset > currentScroll) {
 				isScrollingDown = true;
 			} else {

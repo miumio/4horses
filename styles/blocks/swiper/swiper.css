@@ -1,0 +1,38 @@
+/* Swiper */
+
+:root {
+	--swiper-pagination-bottom: 0;
+	--swiper-theme-color: var(--color-text-primary);
+	--swiper-navigation-size: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination {
+	position: unset;
+}
+
+.swiper-pagination {
+	width: unset!important;
+	padding-inline: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	margin-top: 0;
+	flex-shrink: 0;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 0;
+	background-color: var(--swiper-theme-color);
+	color: var(--color-white);
+}
+
+.swiper-controls {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-white);
+}

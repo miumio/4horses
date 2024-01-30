@@ -1,0 +1,60 @@
+/* Mobile */
+
+@media (width < 1023px) {
+	.slider-steps__airplane {
+		right: -120px;
+	}
+}
+
+@media (width < 767px) {
+	.slider-steps {
+		margin: 100px 0 0;
+	}
+
+	.slider-steps__airplane {
+		top: -100px;
+		bottom: unset;
+		right: unset;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.slider-steps__slide {
+		padding: 62px 20px 34px;
+		height: 100%;
+		box-shadow: none;
+	}
+
+	.slider-steps__slide:last-of-type {
+		padding-right: 20px;
+	}
+
+	.slider-block__description,
+	.slider-block__heading-row {
+		display: block;
+	}
+
+	.slider-block__description {
+		padding-left: 0;
+		width: unset;
+	}
+
+	.slider-steps__text {
+		padding-left: var(--gap);
+	}
+
+	.slider-steps__inner {
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	.slider-steps__slide--wide {
+		flex-direction: column;
+	}
+
+	.slider-steps__slide--wide:not(:last-child):after {
+		display: none;
+	}
+}

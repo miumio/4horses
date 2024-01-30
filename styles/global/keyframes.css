@@ -19,9 +19,9 @@
 
 @keyframes scroll {
 	from {
-	  transform: translateX(4%);
+	  transform: translateZ(0);
 	}
 	to {
-	  transform: translateX(-25%);
+	  transform: translate3d(-50%, 0, 0);
 	}
   }

@@ -2,24 +2,29 @@
 
 .running-line {
 	position: relative;
-	padding-block: 12px;
 	display: flex;
-
 	font-family: var(--font-family-heading);
 	font-size: 22px;
 	color: var(--color-white);
 	text-transform: uppercase;
+
 	background-color: var(--color-warning);
 	overflow: hidden;
+	/* height: 50px; */
 }
 
 .running-line__list {
+	/* position: absolute;
+	height: 50px; */
+
 	display: flex;
+	align-items: center;
 	flex-direction: row;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	transform: translateX(50%);
+	/* animation: scroll 5s infinite linear normal;
+	animation-duration: 16s; */
 }
 
 .running-line__item {
